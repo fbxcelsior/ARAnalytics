@@ -45,8 +45,7 @@
 
 - (void)didShowNewPageView:(NSString *)pageTitle withProperties:(NSDictionary *)properties {
 
-    // Firebase Analytics does not offer a functionality for page views, so they are tracked as events
-    [self event:pageTitle withProperties:properties];
+    [FIRAnalytics setScreenName:pageTitle screenClass:nil];
 }
 
 #endif
