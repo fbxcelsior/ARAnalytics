@@ -1,6 +1,6 @@
 #import "FirebaseProvider.h"
 #import "ARAnalyticsProviders.h"
-#import <Firebase/Firebase.h>
+@import Firebase;
 
 @implementation FirebaseProvider
 #ifdef AR_FIREBASE_EXISTS
